@@ -10,9 +10,12 @@ $Error = (f_p + f_n / n)$\\
 \textbf{Precision:}\\
 When the prediction is 1, how often is it correct?\\
 $Precision = t_p / (t_p + f_p)$\\
-\textbf{Sensitivity, Recall, True Positiv Rate (TPR):}\\
+\textbf{Sensitivity, Recall, True Positive Rate (TPR):}\\
 How often the prediction is 1, when it's actually 1?\\
 $Recall = t_p / (t_p + f_n)$\\
+\textbf{False Positive Rate (FPR):}\\
+How often the prediction is 0, when it's actually 0?\\
+$FPR = f_p / (f_p + t_n)$\\
 \textbf{Miss Rate, False Negative Rate (FNR):}\\
 $Miss Rate = 1 - TPR$
 
