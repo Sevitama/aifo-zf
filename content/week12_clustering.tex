@@ -33,6 +33,10 @@ We partition the data into so called ``clusters''.
   \item Else, go to Assignment step 3
 \end{enumerate}
 
+\subsubsection{Calculating cluster center}
+\includegraphics[width=\linewidth]{cluster-center-1.png}\\
+\includegraphics[width=\linewidth]{cluster-center-2.png}
+
 \subsubsection{Stopping Criterion}
 \begin{itemize}
     \item When centres don't change (time consuming)
@@ -82,10 +86,16 @@ We partition the data into so called ``clusters''.
     \item Sum of squared distances to center
     \item As small as possible
 \end{itemize}
-\textbf{Silhouette Score}
+\subsubsection{WCSS}
+\includegraphics[width=\linewidth]{wcss.png}
+
+\subsubsection{Silhouette Score}
 \begin{itemize}
     \item How far the datapoints in one cluster are from the datapoints in another cluster
     \item SS of a point: $\frac{b-a}{max(a,b)}$
     \item a: average intra-cluster distance (distance between each point within)
     \item b: average inter-cluster distance (distance between a cluster and its nearest neighbour)
 \end{itemize}
+Calculate distance with Pythoagoras:\\
+\includegraphics[width=\linewidth]{silhouette-score-1.png}\\
+\includegraphics[width=\linewidth]{silhouette-score-2.png}
